@@ -19,14 +19,13 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 locale                   : "en-US"
-title                    : "David's Blog"
+title                    : "David Silva's Website"
 title_separator          : "-"
-subtitle                 : "Personal portfolio and blog. Miscellaneous writings about Technology, Literature and Life"
+subtitle                 : "Miscellaneous writings about whathever I want..."
 name                     : "David Silva"
 description: >- # this means to ignore newlines until "baseurl:"
   David Silva personal portfolio and blog. Articles written about 
-  personal projects, activities and thoughts. Writings cover 
-  topics such as Technology, Literature and Life.
+  personal projects, activities and thoughts.
 url                      : "https:dfhssilva.xyz" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : dfhssilva/myblog # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -108,7 +107,7 @@ analytics:
 author:
   name             : "David Silva"
   avatar           : "/assets/images/bio-photo.jpeg"
-  bio              : "Average Linux enjoyer"
+  bio              : "Average Linux enjoyer & <br /> Data Scientist"
   location         : "Lisbon, Portugal"
   email            : "dfhssilva@protonmail.com"
   links:

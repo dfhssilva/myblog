@@ -1,0 +1,45 @@
+---
+layout: single
+title:  "Welcome to David Silva's website!"
+categories: miscellaneous
+---
+
+Welcome to my website! Make yourself at home. 
+Here you can find a bunch of random and completely incoherent stuff!
+
+In hopes to give you some lights on what you will find here, I wrote this post on the Why's, What's, and Where's that originated this website. 
+
+# Why? 
+I have been wanting to create a blog for quite some time. 
+In fact, I have felt the need for it!
+
+Many times I have faced situations where I had to learn some new topic and I needed a place to write what I learned - and why not share it with the internet as, most likely, I have learned from it? 
+
+I have also had occasions where I was working on some personal project and I felt that my work could be documented for the sake of sharing or even for myself, as a way to track my steps. 
+
+For each book I have read, there are excerpts or sentences that really resonated with me. 
+These I have marked, and I would like to share some of them here. 
+I might even write about the books itself, my interpretations, and thoughts.
+
+Finally, I want to share my accomplishments, travels, and offline experiences on a platform that doesn't uses it to take advantage of me.
+A place where I am truly in command and decide what to do with my information.
+
+# What?
+In this website you will find articles about several topics. 
+Mostly related with Data Science, Linux, Self-hosting, and Digital Privacy as, at the moment of writing, these are my main interests. 
+However, I intend to use it for whatever I want. 
+I plan to write about financial management and investments, literature, offline experiences, and other topics.
+
+This website will also have a professional purpose. 
+You will be able to find any information about my professional experience, skills, and education. 
+I will try to keep it as updated as possible.
+
+# Where?
+This website is peculiar in both the nature of its content and the way it is served.
+
+Today's internet has given people the tools to share posts and thoughts in the most accessible and straight-forward way possible, however this has come with a cost: information is not owned by their creators and is used in many ways by platforms to exploit their users. 
+
+The control and dependency imposed by these platforms is something I want to avoid. 
+For this reason, the website you are in right now is self-hosted by me and, as you can see, you are not in any of the typical platforms that we all know \***cough cough**\* Facebook and friends \***cough cough**\*. 
+
+In this way, I feel safe to share, to some extent, everything I wish.

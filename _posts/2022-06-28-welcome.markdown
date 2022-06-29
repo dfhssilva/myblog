@@ -17,9 +17,7 @@ Many times I have faced situations where I had to learn some new topic and I nee
 
 I have also had occasions where I was working on some personal project and I felt that my work could be documented for the sake of sharing or even for myself, as a way to track my steps. 
 
-For each book I have read, there are excerpts or sentences that really resonated with me. 
-These I have marked, and I would like to share some of them here. 
-I might even write about the books itself, my interpretations, and thoughts.
+I might even write about some book or article I have read or movie I have seen. I thought about sharing my interpretations and thoughts.
 
 Finally, I want to share my accomplishments, travels, and offline experiences on a platform that doesn't uses it to take advantage of me.
 A place where I am truly in command and decide what to do with my information.
@@ -37,7 +35,7 @@ I will try to keep it as updated as possible.
 # Where?
 This website is peculiar in both the nature of its content and the way it is served.
 
-Today's internet has given people the tools to share posts and thoughts in the most accessible and straight-forward way possible, however this has come with a cost: information is not owned by their creators and is used in many ways by platforms to exploit their users. 
+Today's internet has given people the tools to share posts and thoughts in the most accessible and straight-forward way possible, however this has come with a cost: information is not owned by their creators and is used in many ways by platforms to exploit their users, without even they knowing. 
 
 The control and dependency imposed by these platforms is something I want to avoid. 
 For this reason, the website you are in right now is self-hosted by me and, as you can see, you are not in any of the typical platforms that we all know \***cough cough**\* Facebook and friends \***cough cough**\*. 

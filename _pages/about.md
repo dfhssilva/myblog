@@ -2,17 +2,33 @@
 title: "About"
 permalink: /about/
 toc: true
+gallery1:
+  - image_path: /assets/images/20191102_153016.jpg
+  - image_path: /assets/images/20190703_105157.jpg
+  - image_path: /assets/images/20190526_212703.jpg
+gallery2:
+  - image_path: /assets/images/20190722_124049.jpg
+  - image_path: /assets/images/20190702_121143.jpg
+  - image_path: /assets/images/20190718_182733.jpg
+gallery3:
+  - image_path: /assets/images/20190823_124330.jpg
+  - image_path: /assets/images/20190619_142544.jpg
+  - image_path: /assets/images/20190701_140202.jpg
 ---
 
-Hi there! My name is David and I am a Data Scientist from Lisbon, Portugal.
-
-I am a regular person just trying to figure life out. 
+Hi there!
+My name is David and I am a Data Scientist from Lisbon, Portugal.
 
 I am into messing with Linux systems, digital privacy and the impacts of big tech on society and democracy. 
+
 I also enjoy reading novels. Among my favorites are "100 Years of Solitude" by Gabriel Garcia Márquez and "As Intermitências da Morte" ("Death with Interruptions") from José Saramago.
 Occasionally, I also play some computer games and I am constantly listening to music!
+ 
+> "I am not sure that I exist, actually. I am all the writers that I have read, all the people that I have met, all the women that I have loved; all the cities I have visited."<br> - Jorge Luis Borges
 
-Feel free to say hello or ask a question. You can check my [contact page][contact-page] if you want to reach out.
+Feel free to say hello or ask a question. You can email me at [dfhssilva@protonmail.com](mailto:dfhssilva@protonmail.com) if you want to reach out.
+
+{% include gallery id="gallery1"%}
 
 # Professional Information
 I work as a Data Scientist, having connections to both the academic and industry worlds. 
@@ -26,6 +42,8 @@ This was a project supported by the Portuguese Foundation for Science and Techno
 
 For further details you can find my CV [here]().
 
+{% include gallery id="gallery2"%}
+
 ## Side Projects
 I sometimes take the opportunity to participate in Data Science related projects outside of work or school context. 
 From May 2020 to May 2021, I volunteered in the "Latin America Forest and Landscape Restoration" project at [DSSG Solve](https://www.solveforgood.org/) where I helped to develop a semi-automated policy analysis tool with NLP techniques to identify financial and economic incentives, as well as the type of incentive instrument employed, among Forest and Landscape Preservation and Restoration policy documents from Latin American countries like El Salvador and Peru. 
@@ -37,10 +55,8 @@ Because life is wider than a computer screen, I also enjoy spending time with my
 
 During my student years, I played futsal (indoors football) as the goal keeper for my faculty team. During this period we climbed to the first division of the Lisbon university futsal tournament.
 
-I also absolutely love traveling! This is a taste that I developed during my Erasmus exchange in the year of 2019, where I spend 6 months studying in Ljubljana, Slovenia and had the chance to travel to countries and cities in central Europe and the Balkans.
+{% include gallery id="gallery3"%}
 
-In more recent years, I have continued traveling although on a lower rate due to Covid-19.
+I also absolutely love traveling! During my Erasmus exchange in 2019, I spend 6 months studying in Ljubljana, Slovenia and I had the chance to travel to countries and cities in central Europe and the Balkans.
 
-<!-- - share some photos -->
-
-[contact-page]: {{ "/contact/" | relative_url }}
+In more recent years, I have continued traveling although with less frequency due to Covid-19 and work.

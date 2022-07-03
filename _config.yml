@@ -29,7 +29,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 url                      : "https:dfhssilva.xyz" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : dfhssilva/myblog # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : /assets/images/teaser.jpeg # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : /assets/images/teaser.jpg # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
@@ -271,7 +271,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      show_date: true
       share: true
       related: true
   # _pages
@@ -289,6 +289,4 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
       share: true
-      related: true

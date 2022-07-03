@@ -1,13 +1,15 @@
 ---
 layout: single
 title:  "Welcome to David Silva's website!"
+header:
+  image: /assets/images/home-header.jpg
 categories: miscellaneous
 ---
 
 Welcome to my website! Make yourself at home. 
 Here you can find a bunch of random and completely incoherent stuff!
 
-In hopes to give you some lights on what you will find here, I wrote this post on the Why's, What's, and Where's that originated this website. 
+In hopes to give you some lights on what you will find here, I wrote this post on the Why's, What's, and Where's that gave origin to this website. 
 
 # Why? 
 I have been wanting to create a blog for quite some time. 

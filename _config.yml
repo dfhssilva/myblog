@@ -86,14 +86,17 @@ baidu_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
-og_image                 : # Open Graph/Twitter default site image
+  username               : "dfhssilva"
+og_image                 : /assets/images/20190526_212703.jpg # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+    - "https://www.linkedin.com/in/dfhssilva"
+    - "https://github.com/dfhssilva"
+    - "https://twitter.com/dfhssilva"
 
 # Analytics
 analytics:
@@ -109,24 +112,33 @@ author:
   avatar           : "/assets/images/bio-photo.jpeg"
   bio              : "Average Linux enjoyer & <br /> Data Scientist"
   location         : "Lisbon, Portugal"
-  email            : "dfhssilva@protonmail.com"
+  email            :
   links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:dfhssilva@protonmail.com"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/dfhssilva"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/dfhssilva"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/dfhssilva"
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/dfhssilva"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/dfhssilva"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/dfhssilva"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: https://twitter.com/dfhssilva
 
 
 # Reading Files

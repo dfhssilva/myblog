@@ -10,15 +10,14 @@ header:
 ***
 
 Efficient knowledge extraction from large bodies of text is a challenge for multiple application domains.
-Scientific research, policy analysis, and competitive intelligence are all areas that demand extense scanning and searching through large corpora of documents and that can benefit from a tool that facilitates these processes.
-<!-- Add a summary statistic or reference an article or fact fundamenting this argument -->
+Scientific research, policy analysis, and competitive intelligence are all areas that demand extended scanning and searching through large corpora of documents and that can benefit from a tool that facilitates these processes.
 
 In this post, we will look at **MapIntel**: a system for visualizing and searching information over large textual corpora by encoding each document as a multidimensional vector that captures its own semantics. 
 For a more detailed display of the system, its design decisions and components, refer to the paper ["MapIntel: Enhancing Competitive Intelligence Acquisition Through Embeddings and Visual Analytics"]().
 
 MapIntel differentiates from previously designed systems by promoting serendipity - the finding of useful or potentially useful information not directly sought for. 
-In addition, we use sentence embeddings and topic models in our system that leverage the [Transformer architecture]().
-This is a somewhat recent arquitecture that has provided significant advancements in multiple Natural Language Processing (NLP) subdomains.
+In addition, we use sentence embeddings and topic models in our system that leverage the Transformer architecture.
+This is a somewhat recent architecture that has provided significant advancements in multiple Natural Language Processing (NLP) subdomains.
 If you want to understand better this architecture I highly advise the blog post ["The Illustrated Transformer"](https://jalammar.github.io/illustrated-transformer/), by Jay Alammar.
 
 # The Architecture
@@ -27,23 +26,23 @@ The MapIntel architecture is composed by an *Indexing Pipeline*, which gets docu
 {% include figure image_path="/assets/images/mapintel-architecture.png" alt="MapIntel architecture" caption="Three main pipelines: Indexing, Query, and Visualization" %}
 
 The system takes a set of documents and computes their **embeddings** - a vectorial representation of a document.
-We used [SBERT](), a transformer-based sentence embedding model to produce vectors that encode the essence of each document.
-This is the core of our work, as **the system relies on how well the semantics of the documents are captured** to successfuly organize, search and explore the corpus.
-All necessary computations, including the embeddings, dimensionality reduction through [UMAP](), and topic modeling through [BERTopic]() are offloaded to not affect interaction with the system.
+We used [SBERT](https://arxiv.org/abs/1908.10084), a transformer-based sentence embedding model to produce vectors that encode the essence of each document.
+This is the core of our work, as **the system relies on how well the semantics of the documents are captured** to successfully organize, search and explore the corpus.
+All necessary computations, including the embeddings, dimensionality reduction through [UMAP](https://arxiv.org/abs/1802.03426), and topic modeling through [BERTopic](https://maartengr.github.io/BERTopic/index.html) are offloaded to not affect interaction with the system.
 
 We use a [Open Distro for ElasticSearch](https://opendistro.github.io/for-elasticsearch/) database as the central repository for our documents, metadata and computational outputs. 
 This database was chosen due to the efficient full-text search capabilities it provides. 
 Namely, we use its [Approximate Nearest Neighbors (ANN)](https://opendistro.github.io/for-elasticsearch-docs/docs/knn/approximate-knn/) module to retrieve documents that have its embeddings close to a natural language query embedding. 
 This is what we call the "Retrieval Bi-Encoder + ANN" module in our architecture.
-We subsequently apply a [Cross-Encoder]() model that individually compares all the retrieved documents with the query, filtering out the most relevant documents and returns them to the user.
+We subsequently apply a [Cross-Encoder](https://www.sbert.net/examples/applications/cross-encoder/README.html) model that individually compares all the retrieved documents with the query, filtering out the most relevant documents and returns them to the user.
 
 To provide an interface for exploration and quick identification of the main topics of the corpus, we also produce an interactive 2-dimensional scatter plot of the corpus. 
-This map uses UMAP to produce an accurate low-dimensional topological representation of the high-dimensional vector space and BERTopic to capture its main topical cohorts, thus providing a way to visually identify groups of documents that share the same semantical characteristics.
+This map uses UMAP to produce an accurate low-dimensional topological representation of the high-dimensional vector space and BERTopic to capture its main topical cohorts, thus providing a way to visually identify groups of documents that share the same semantic characteristics.
 
 # Evaluation and Results
 One of the biggest challenges in our work was how to evaluate such a complex system.
 
-We thought about using the [20 newsgroup dataset]() as it contains labeled documents, which we can use to compare with the identified topics.
+We thought about using the [20 newsgroup dataset](https://scikit-learn.org/stable/datasets/real_world.html#the-20-newsgroups-text-dataset) as it contains labeled documents, which we can use to compare with the identified topics.
 In this way, since BERTopic relies on the sentence embeddings, we are also evaluating how well the semantics of each document are captured by the vectors.
 We also tried several models both for capturing the topics and embedding the documents.
 The model comparison was guided through the optimization of the following metrics: 
@@ -70,10 +69,19 @@ It is clear that the original topics are correctly captured, proving that the em
 {% include figure image_path="/assets/images/mapintel-umap.png" alt="Comparison of original and topic labels" caption="Comparison between UMAP planes of **train data** with original (left) and topic labels (right)." %}
 
 # The Prototype
-We built a Python web app using [Streamlit]() to demonstrate the capabilities of our system. 
+We built a Python web app using [Streamlit](https://streamlit.io/) to demonstrate the capabilities of our system. 
 The app allows a user to search a corpus of documents and explore it through a 2-dimensional interactive scatter plot where you can zoom, pan, and hover specific documents to access their content.
 
 Watch the video below to get to know better the MapIntel system and its features.
 
+{% include video id="730648817" provider="vimeo" %}
+
 You can find the code for the Python app at [https://github.com/NOVA-IMS-Innovation-and-Analytics-Lab/mapintel_project](https://github.com/NOVA-IMS-Innovation-and-Analytics-Lab/mapintel_project).
 
+# Conclusion
+MapIntel is a system that can be used to extract knowledge from arbitrary corpora, offering **searching** and **browsing** capabilities through the use of sentence embeddings.
+
+The MapIntel system is open-sourced and can be easily launched locally due to its containerized architecture, facilitating collaboration efforts.
+If you are interested on this project and you want to do something with or if you want to discuss any implementation detail, feel free to [email me](mailto:dfhssilva@protonmail.com)!
+
+### ["MapIntel: Enhancing Competitive Intelligence Acquisition Through Embeddings and Visual Analytics"]()
